@@ -90,12 +90,12 @@ function checkPage($content){
 
          $linkArray = checkPage($txt); 
          foreach ($linkArray as $value) { 
-          // echo '<pre>';
+          echo '<pre>';
 
-          // var_dump(parse_url($value));
-          // echo '</pre>';
-          // parse_url($url, PHP_URL_SCHEME);
-          // $headers = get_headers($value);
+          var_dump(parse_url($value));
+          echo '</pre>';
+          parse_url($url, PHP_URL_SCHEME);
+          $headers = get_headers($value);
 
           if(get_http_response_code($value) == ){
 
